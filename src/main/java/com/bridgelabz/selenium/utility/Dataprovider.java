@@ -10,7 +10,7 @@ public class Dataprovider
     @DataProvider(name = "LoginDetails")
     public  Object[][] getDataFromProvider() throws IOException {
 
-       Object data[][]= TestUtil.getTestData("sheet1");
+       Object data[][]= ExcelUtil.getTestData("sheet1");
        return data;
     }
 }

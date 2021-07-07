@@ -1,13 +1,12 @@
 package com.bridgelabz.selenium.utility;
 
-import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class TestUtil {
+public class ExcelUtil {
 
     /* * @param filePath path of the file taken as input
      * @param sheetName sheet name in a file

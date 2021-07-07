@@ -25,10 +25,12 @@ public class Login extends BaseClass {
         PageFactory.initElements(driver, this);
     }
 
-    public void login (String userName, String passWord) throws InterruptedException
+    public void login (String username, String password) throws InterruptedException
     {
-            emailid.sendKeys(userName);
-            userPassword.sendKeys(passWord);
+            emailid.sendKeys(username);
+            System.out.println("email is : "+username);
+            userPassword.sendKeys(password);
+            System.out.println("email is : "+password);
             loginBtn.click();
             Thread.sleep(200);
 
