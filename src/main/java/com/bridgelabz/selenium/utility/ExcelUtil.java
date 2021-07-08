@@ -22,10 +22,11 @@ public class ExcelUtil {
         try
         {
             file = new FileInputStream(filePath);//create object of FileInputStrem class and pass filepath
+            throw new CustomException("File not exist");
         }
-        catch (FileNotFoundException e)
+        catch (FileNotFoundException | CustomException e)
         {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
         XSSFWorkbook workbook = new XSSFWorkbook(file);//creating workbook object
         XSSFSheet sheet = workbook.getSheet(sheetName);//get sheet

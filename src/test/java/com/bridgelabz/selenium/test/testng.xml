@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test  name="parameter"  verbose="2">
-      <parameter name="username" value="latikakhairnar10@gmail.com"/>
+<suite name="Testing the Parameter annotation method">
+    <test  name="chrome"  verbose="2">
+        <parameter name="browserName" value="Chrome"/>
+        <parameter name="username" value="latikakhairnar10@gmail.com"/>
         <parameter name="password" value="latika@123"/>
         <classes >
             <class name="com.bridgelabz.selenium.test.ParameterTest">

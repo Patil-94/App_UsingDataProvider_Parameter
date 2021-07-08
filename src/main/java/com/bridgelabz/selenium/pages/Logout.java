@@ -1,12 +1,13 @@
 package com.bridgelabz.selenium.pages;
 
-import com.bridgelabz.selenium.base.BaseClass;
+
+import com.bridgelabz.selenium.base.CrossBrowserClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Logout extends BaseClass {
+public class Logout extends CrossBrowserClass {
 
     /* @Description - Using FindBy for locating elements */
     @FindBy(xpath = "//img[@class='s45kfl79 emlxlaya bkmhp75w spb7xbtv']")
@@ -21,6 +22,7 @@ public class Logout extends BaseClass {
     }
 
     public void logoutApplication() throws InterruptedException {
+        Thread.sleep(500);
         clickonAccount.click();
         Thread.sleep(500);
         logoutBtn.click();
