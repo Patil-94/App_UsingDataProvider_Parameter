@@ -1,7 +1,6 @@
 ./   
 .git/     
-.idea/  
-build.gradle  
+.idea/    
 gradlew*     
 settings.gradle
 ../  
